@@ -1,14 +1,14 @@
 class Person
     attr_accessor :name, :job
     # setter method
-    def name=(name, job = "doctor")
+    def initialize(name, job = "doctor")
       @name = name
       @job = job
     end
 end
 
-kanye = Person.new
-kanye.name=("Kanye")
+usrs = Person.new("allan", "Dev")
+puts "User name is #{usrs.name} and s/he is a #{usrs.job}"
 
 # class Person
 #     attr_accessor :name, :job
